@@ -45,7 +45,7 @@ const postBoxLogic = ({
     }
     button.disabled = true;
         const res = await axios.post(
-          "http://localhost:3001/api/post",
+          "https://fullstack-backend-socialapp.herokuapp.com/api/post",
           {
             dataUrl: postData ? postData : '',
             postContent,

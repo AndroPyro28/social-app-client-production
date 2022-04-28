@@ -78,7 +78,7 @@ const StatusBox = ({ status }) => {
 
   useEffect(async () => {
     setComments([]);
-    const res = await axios.get(`http://localhost:3001/api/getCommentsByPostId/${status.id}`, {
+    const res = await axios.get(`https://fullstack-backend-socialapp.herokuapp.com/api/getCommentsByPostId/${status.id}`, {
       headers: {
         accesstoken: Cookies.get("userToken")
       }

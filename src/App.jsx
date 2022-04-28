@@ -118,7 +118,7 @@ function App() {
   useEffect(async () => {
     try {
       Notification.requestPermission();
-      const res = await axios.get("http://localhost:3001/api/auth", {
+      const res = await axios.get("https://fullstack-backend-socialapp.herokuapp.com/api/auth", {
         headers: {
           accesstoken: Cookies.get("userToken"),
         },
@@ -130,7 +130,7 @@ function App() {
         dispatch(authenticationFailed());
       } else {
         dispatch(authenticationSuccess(currentUser, true));
-        const socketConnection = io("http://localhost:3001");
+        const socketConnection = io("https://fullstack-backend-socialapp.herokuapp.com");
         dispatch(socketConnected(socketConnection));
       }
       setLoading(false);

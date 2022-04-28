@@ -4,7 +4,7 @@ import axios from 'axios'
 
 function signupLogic({toast}) {
     const onSubmit = async (values) => {
-        const res = await axios.post("http://localhost:3001/api/signup", values, {
+        const res = await axios.post("https://fullstack-backend-socialapp.herokuapp.com/api/signup", values, {
         });
 
         const {success, msg} = res.data;

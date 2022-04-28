@@ -40,7 +40,7 @@ function Home() {
   useEffect(async () => {
     setNewsfeedStatus([]);
     const res = await axios.get(
-      "http://localhost:3001/api/getAllFriendsStatus",
+      "https://fullstack-backend-socialapp.herokuapp.com/api/getAllFriendsStatus",
       {
         headers: {
           accesstoken: Cookies.get("userToken"),

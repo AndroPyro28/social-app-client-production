@@ -75,7 +75,7 @@ function ProtectedNav() {
     setUserRelation([]);
     setUserRelationNotificationNumber(0);
     const res = await axios.get(
-      `http://localhost:3001/api/getUserRelation/${currentUser.id}`,
+      `https://fullstack-backend-socialapp.herokuapp.com/api/getUserRelation/${currentUser.id}`,
       {
         headers: {
           accesstoken: Cookies.get("userToken"),

@@ -36,7 +36,7 @@ const userProfileLogic = ({socket, id, refresher, setRefresher, dispatch, setPag
     }
 
     const openChatBox = async (userId) => {
-        const res = await axios.get(`http://localhost:3001/api/getMessagesByUserId/${userId}`, {
+        const res = await axios.get(`https://fullstack-backend-socialapp.herokuapp.com/api/getMessagesByUserId/${userId}`, {
             headers: {
                 accesstoken: Cookies.get('userToken')
             }

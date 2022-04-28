@@ -56,7 +56,7 @@ function UserProfile() {
     setUserData([]);
     setPosts([]);
     setLoading(true);
-    const res = await axios.get(`http://localhost:3001/api/userProfile/${id}`, {
+    const res = await axios.get(`https://fullstack-backend-socialapp.herokuapp.com/api/userProfile/${id}`, {
       headers: {
         accesstoken: Cookies.get("userToken"),
       },

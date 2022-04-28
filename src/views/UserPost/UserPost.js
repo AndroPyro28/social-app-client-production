@@ -14,7 +14,7 @@ function UserPost() {
   const [post, setPost] = useState({});
 
   useEffect(async () => {
-    const res = await axios.get(`http://localhost:3001/api/getPost/${postId}`, {
+    const res = await axios.get(`https://fullstack-backend-socialapp.herokuapp.com/api/getPost/${postId}`, {
       headers: {
         accesstoken: Cookies.get('userToken')
       }

@@ -10,7 +10,7 @@ function FriendsContainer({id, setNumOfFriends}) {
   const [friends, setFriends] = useState([]);
 
   useEffect(async () => {
-    const res = await axios.get(`http://localhost:3001/api/getAllFriendsByUserId/${id}`, {
+    const res = await axios.get(`https://fullstack-backend-socialapp.herokuapp.com/api/getAllFriendsByUserId/${id}`, {
       headers: {
         accesstoken: Cookies.get('userToken')
       }

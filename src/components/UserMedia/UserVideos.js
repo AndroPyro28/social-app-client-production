@@ -8,7 +8,7 @@ function UserVideos({userId, userData}) {
     const [data, setData] = useState([]);
 
     useEffect(async () => {
-        const res = await axios.post(`http://localhost:3001/api/getUserMedia`, {
+        const res = await axios.post(`https://fullstack-backend-socialapp.herokuapp.com/api/getUserMedia`, {
             userId,
             mediaType: "video"
         }, {

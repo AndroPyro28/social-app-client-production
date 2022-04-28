@@ -32,7 +32,7 @@ function UpdateCoverLogic({ setCoverPhoto, coverPhoto, setCoverModal, toast}) {
       const btnUpdate = document.querySelector('.btnUpdate');
    
     btnUpdate.disabled = true;
-    const res = await axios.post("http://localhost:3001/api/updateCoverPhoto", {
+    const res = await axios.post("https://fullstack-backend-socialapp.herokuapp.com/api/updateCoverPhoto", {
       coverUrlData: coverPhoto
     }, {
       headers: {

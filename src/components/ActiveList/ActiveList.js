@@ -11,7 +11,7 @@ function ActiveList({toggleActiveList, setToggleActiveList}) {
     useEffect(async () => {
       
       if(toggleActiveList) {
-        const res = await axios.get('http://localhost:3001/api/getAllFriends', {
+        const res = await axios.get('https://fullstack-backend-socialapp.herokuapp.com/api/getAllFriends', {
         headers: {
           accessToken: Cookies.get('userToken')
         }

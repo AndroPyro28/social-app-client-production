@@ -70,7 +70,7 @@ function UpdateLogic({ setPost, refresher, setRefresher, post, toast, dispatch, 
     const button = document.querySelector('.btnSubmit');
 
     button.disabled = true;
-    const res = await axios.post(`http://localhost:3001/api/updatePost`, post, {
+    const res = await axios.post(`https://fullstack-backend-socialapp.herokuapp.com/api/updatePost`, post, {
       headers: {
         accesstoken: Cookies.get("userToken"),
       },

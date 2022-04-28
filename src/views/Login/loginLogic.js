@@ -4,7 +4,7 @@ import Cookies from "js-cookie";
 
 const loginLogic = ({ toast }) => {
   const onSubmit = async (values) => {
-    const res = await axios.post("http://localhost:3001/api/login", values, {
+    const res = await axios.post("https://fullstack-backend-socialapp.herokuapp.com/api/login", values, {
     });
 
     const { assignedToken, success, msg } = res.data;

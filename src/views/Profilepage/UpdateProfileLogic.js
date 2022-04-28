@@ -35,7 +35,7 @@ function UpdateProfileLogic({ setProfilePhoto, profilePhoto, toast, setProfileMo
     try {
       btnUpdate.disabled = true
       const res = await axios.post(
-        "http://localhost:3001/api/updateProfilePicture",
+        "https://fullstack-backend-socialapp.herokuapp.com/api/updateProfilePicture",
         {
           profileUrlData: profilePhoto,
         },
