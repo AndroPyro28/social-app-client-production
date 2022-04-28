@@ -143,7 +143,7 @@ function App() {
     !loading && (
       <div className="App">
         <CreateGlobalStyle />
-        <Router basename="/social-app-client-production">
+        <Router basename="https://andropyro28.github.io/social-app-client-production/login">
           {Cookies.get("userToken") ? <ProtectedNav /> : <UnProtectedNav />}
 
           <Switch>
