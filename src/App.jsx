@@ -143,7 +143,7 @@ function App() {
     !loading && (
       <div className="App">
         <CreateGlobalStyle />
-        <Router>
+        <Router basename="/social-app-client-production">
           {Cookies.get("userToken") ? <ProtectedNav /> : <UnProtectedNav />}
 
           <Switch>
