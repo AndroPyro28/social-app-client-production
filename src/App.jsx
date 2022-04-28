@@ -143,7 +143,7 @@ function App() {
     !loading && (
       <div className="App">
         <CreateGlobalStyle />
-        <Router basename="/social-app-client-production/">
+        <Router>
           {Cookies.get("userToken") ? <ProtectedNav /> : <UnProtectedNav />}
 
           <Switch>
@@ -189,7 +189,7 @@ function App() {
               isAuth={Cookies.get("userToken")}
             />
 
-            {/* <Route path="*">{() => window.location.assign("/login")}</Route> */}
+            <Route path="*">{() => window.location.assign("/login")}</Route>
           </Switch>
 
           {currentUser && !chatboxData.userData && (
