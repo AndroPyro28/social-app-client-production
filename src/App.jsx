@@ -189,7 +189,7 @@ function App() {
               isAuth={Cookies.get("userToken")}
             />
 
-            <Route path="*">{() => window.location.assign("/login")}</Route>
+            {/* <Route path="*">{() => window.location.assign("/login")}</Route> */}
           </Switch>
 
           {currentUser && !chatboxData.userData && (
