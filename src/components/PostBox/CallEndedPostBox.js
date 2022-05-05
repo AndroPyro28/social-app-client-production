@@ -18,6 +18,10 @@ function CallEndedPostBox() {
         overflow: hidden;
         text-align: center;
         font-family: 'poppins', sans-serif;
+
+        @media(max-width: 800px) {
+            width: 90%;
+        }
     `;
 
     const DeletePostHeader = styled.div`
