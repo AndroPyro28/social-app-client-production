@@ -20,6 +20,10 @@ function DeletePostBox({postId, dispatch, setRefresher, refresher, toast, setNew
         overflow: hidden;
         text-align: center;
         font-family: 'poppins', sans-serif;
+
+        @media(max-width: 800px) {
+            width: 90%;
+        }
     `;
 
     const DeletePostHeader = styled.div`
