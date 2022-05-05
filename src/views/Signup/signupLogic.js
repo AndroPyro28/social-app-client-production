@@ -1,10 +1,14 @@
 import React from 'react';
 import * as yup from 'yup';
 import axios from 'axios'
+import Cookies from 'js-cookie';
 
 function signupLogic({toast}) {
     const onSubmit = async (values) => {
         const res = await axios.post("https://fullstack-backend-socialapp.herokuapp.com/api/signup", values, {
+            headers: {
+                accessToken: Cookies.get("userToken")
+            }
         });
 
         const {success, msg} = res.data;
