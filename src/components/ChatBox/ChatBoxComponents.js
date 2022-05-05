@@ -51,6 +51,10 @@ export const ChatBoxContainer = styled.div`
       }
     }
   }
+
+  @media (max-width: 800px) {
+    width: 90%;
+  }
 `;
 
 export const ChatBoxHeader = styled.div`
