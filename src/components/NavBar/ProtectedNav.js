@@ -98,7 +98,7 @@ function ProtectedNav() {
       setPostNotification([]);
       setPostNotificationNumber(0);
       const res = await axios.get(
-        `http://localhost:3001/api/getPostsNotification/${currentUser.id}`,
+        `https://fullstack-backend-socialapp.herokuapp.com/api/getPostsNotification/${currentUser.id}`,
         {
           headers: {
             accesstoken: Cookies.get("userToken"),
@@ -118,7 +118,7 @@ function ProtectedNav() {
 
   useEffect(async () => {
     setMessageNotification([]);
-    const res = await axios.get(`http://localhost:3001/api/getMessages`, {
+    const res = await axios.get(`https://fullstack-backend-socialapp.herokuapp.com/api/getMessages`, {
       headers: {
         accesstoken: Cookies.get("userToken"),
       },
