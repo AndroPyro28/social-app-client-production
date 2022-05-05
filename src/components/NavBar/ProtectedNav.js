@@ -165,7 +165,7 @@ function ProtectedNav() {
     // socket?.emit('searchData', {textSearch, accesstoken: Cookies.get('userToken')})
     setSearchedDataList([]);
     const res = await axios.post(
-      "http://localhost:3001/api/searchPeople",
+      "https://fullstack-backend-socialapp.herokuapp.com/api/searchPeople",
       {
         textSearch,
       },
