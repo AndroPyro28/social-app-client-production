@@ -196,8 +196,7 @@ export const AuthNavBar = styled.div`
 `;
 export const NotificationButtonWrapper = styled.div`
     position: relative;
-    
-
+  
     & i {
       background: ${({isActive}) => isActive ? "lightblue" : "white"} !important;
       color: ${({isActive}) => isActive ? "white" : "black"} !important;
