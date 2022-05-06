@@ -52,7 +52,6 @@ background-attachment: fixed ;
 @media(max-width:600px) {
   & {
   width: 90%;
-
   }
 }
 }

@@ -54,7 +54,7 @@ function ChatBox({ chatboxData }) {
   const fetchMessages = messagesData.map((message, index) => {
     const {time, userId, messageType, messageData, messageContent} = message
     if(message.userId === currentUser.id) {
-      return <span className="you" key={index} title={format(time)}>
+      return <span className="you" key={time} title={format(time)}>
         <p>{messageContent}</p>
 
         {
