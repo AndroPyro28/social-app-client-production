@@ -32,7 +32,6 @@ function ChatBox({ chatboxData }) {
 
   useEffect(() => {
     setMessagesData(chatboxData.messages);
-    console.log(chatboxData.messages)
   }, [])
 
   useEffect(() => {
