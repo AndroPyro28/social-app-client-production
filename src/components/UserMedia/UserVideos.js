@@ -30,7 +30,7 @@ function UserVideos({userId, userData}) {
                 return (
                     <MediaData>
                     <i class="fa-solid fa-pen"></i>
-                     <video src={media.dataUrl} controls />
+                     <video publicId={media.dataUrl} cloudName="iamprogrammer" controls />
                     </MediaData>
                 )
             

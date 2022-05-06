@@ -3,6 +3,7 @@ import axios from "axios";
 import {MediaContainer, MediaDataContainer, MediaData} from "./MediaComponent";
 import Cookies from 'js-cookie';
 import { EmptyStateMent } from '../NavBar/NavBar';
+import { Image } from 'cloudinary-react';
 function UserPhotos({userId, userData}) {
 
     const [data, setData] = useState([]);
@@ -30,7 +31,7 @@ function UserPhotos({userId, userData}) {
                 return (
                     <MediaData>
                         <i class="fa-solid fa-pen"></i>
-                        <img src={media.dataUrl} />
+                        <Image publicId={media.dataUrl} cloudName="iamprogrammer" />
                     </MediaData>
                 )
             
