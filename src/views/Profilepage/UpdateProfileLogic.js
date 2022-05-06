@@ -40,7 +40,6 @@ function UpdateProfileLogic({ setProfilePhoto, profilePhoto, toast, setProfileMo
           profileUrlData: profilePhoto,
         },
         {
-          withCredentials: true,
           headers: {
             accesstoken: Cookies.get("userToken"),
           },onUploadProgress: (progress) => {
