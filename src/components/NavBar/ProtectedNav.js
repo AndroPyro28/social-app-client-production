@@ -60,15 +60,6 @@ function ProtectedNav() {
     openChatBox
   } = protectedNavLogic({ socketReducer, dispatch, setMessageNotificationToggle });
 
-  
-  // const CONNECTION_PORT = "http://localhost:3001";
-
-  // useEffect(() => {
-  //   const socketConnection = io(CONNECTION_PORT);
-  //   dispatch(socketConnected(socketConnection));
-  //   socket = socketConnection;
-  // }, []);
-
   const socket = useSelector(state => state.socketReducer);
 
   useEffect(async () => {
