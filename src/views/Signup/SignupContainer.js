@@ -48,6 +48,13 @@ background-attachment: fixed ;
   box-shadow: 0px 8px 46px -1px rgba(0,0,0,0.52);
 -webkit-box-shadow: 0px 8px 46px -1px rgba(0,0,0,0.52);
 -moz-box-shadow: 0px 8px 46px -1px rgba(0,0,0,0.52);
+
+@media(max-width:600px) {
+  & {
+  width: 85%;
+
+  }
+}
 }
 
 & .input__field {
@@ -114,7 +121,7 @@ background-attachment: fixed ;
 
 @media(max-width:420px) {
   & form {
-    width: 250px;
+    width: 85%;
   }
   & {
     align-items: center;
