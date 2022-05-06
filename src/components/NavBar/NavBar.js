@@ -185,12 +185,12 @@ export const AuthNavBar = styled.div`
 
   @media (max-width: 750px) {
 
-    & {
+    /* & {
       height: auto;
       flex-direction: column;
-    }
+    } */
     & div:nth-child(3) > div i {
-       /* display: none; */
+       display: none;
     }
   }
 `;
