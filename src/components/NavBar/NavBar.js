@@ -16,7 +16,7 @@ export const UnAuthNavBar = styled.div`
     font-size: 30px;
   }
 
-  @media(max-width: 420px) {
+  @media(max-width: 620px) {
     & div:nth-child(1) {
       display: none;
     }
