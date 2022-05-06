@@ -18,7 +18,7 @@ export const UnAuthNavBar = styled.div`
 
   @media(max-width: 420px) {
     & div:nth-child(1) {
-      display: none;
+      /* display: none; */
     }
   }
 
@@ -185,7 +185,7 @@ export const AuthNavBar = styled.div`
 
   @media (max-width: 750px) {
     & div:nth-child(3) > div i {
-       display: none;
+       /* display: none; */
     }
   }
 `;
@@ -437,7 +437,7 @@ pointer-events: none;
 
 @media (max-width: 750px) {
     & {
-       display: none;
+       /* display: none; */
     }
   }
 
