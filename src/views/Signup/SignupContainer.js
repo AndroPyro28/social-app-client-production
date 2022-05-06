@@ -51,7 +51,7 @@ background-attachment: fixed ;
 
 @media(max-width:600px) {
   & {
-  width: 85%;
+  width: 90%;
 
   }
 }
@@ -120,9 +120,9 @@ background-attachment: fixed ;
 }
 
 @media(max-width:420px) {
-  & form {
+  /* & form {
     width: 85%;
-  }
+  } */
   & {
     align-items: center;
   }
