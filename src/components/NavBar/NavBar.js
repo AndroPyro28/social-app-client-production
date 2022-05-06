@@ -18,7 +18,7 @@ export const UnAuthNavBar = styled.div`
 
   @media(max-width: 420px) {
     & div:nth-child(1) {
-      /* display: none; */
+      display: none;
     }
   }
 
