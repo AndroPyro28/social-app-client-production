@@ -53,7 +53,7 @@ export const UnAuthNavBar = styled.div`
 `;
 export const AuthNavBar = styled.div`
   font-family: "poppins", sans-serif;
-  /* height: 50px; */
+  height: 50px;
   display: flex;
   align-items: center;
   padding: 10px;
@@ -184,6 +184,11 @@ export const AuthNavBar = styled.div`
   }
 
   @media (max-width: 750px) {
+
+    & {
+      height: auto;
+      flex-direction: column;
+    }
     & div:nth-child(3) > div i {
        /* display: none; */
     }
