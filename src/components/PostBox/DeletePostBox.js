@@ -70,7 +70,7 @@ function DeletePostBox({postId, dispatch, setRefresher, refresher, toast, setNew
     `
 
     const deletePost = async (postId) => {
-        const res = await axios.delete(`https://fullstack-backend-socialapp.herokuapp.com/${postId}`, {
+        const res = await axios.delete(`https://fullstack-backend-socialapp.herokuapp.com/api/deletePost/${postId}`, {
             headers: {
                 accesstoken: Cookies.get('userToken')
             }
